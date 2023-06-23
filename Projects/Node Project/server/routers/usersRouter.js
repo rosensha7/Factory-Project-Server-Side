@@ -3,7 +3,7 @@ const router = express.Router();
 const UserBLL = require('../BLL/usersBLL');
 const { InvalidDataError } = require('../errors/invalidDataError');
 const { updateActions } = require('../middlewares/actionManager');
-const { validateToken } = require('../DAL/token');
+const { validateToken } = require('../middlewares/validationManager');
 
 // Entry Point: 'http://localhost:8000/users
 

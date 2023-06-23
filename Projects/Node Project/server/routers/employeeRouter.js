@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const EmployeeBLL = require('../BLL/employeesBLL');
 const { InvalidDataError } = require('../errors/invalidDataError');
-const { validateToken } = require('../DAL/token');
+const { validateToken } = require('../middlewares/validationManager');
 const { updateActions } = require('../middlewares/actionManager');
 
 // Entry Point: 'http://localhost:8000/employees
